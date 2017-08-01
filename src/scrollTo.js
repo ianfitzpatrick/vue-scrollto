@@ -118,7 +118,9 @@ const scroller = () => {
             // thus if we are trying to scrollTop on a body tag
             // we need to scroll on the documentElement
             document.documentElement.scrollTop = top;
-            document.documentElement.scrollLeft = left;
+
+            // Temporarily removing horizontal scrolling
+            // document.documentElement.scrollLeft = left;
         }
     }
 
