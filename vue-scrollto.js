@@ -262,13 +262,13 @@ var scroller = function scroller() {
 
     function topLeft(element, top, left) {
         element.scrollTop = top;
-        element.scrollLeft = left;
+        // element.scrollLeft = left;
         if (element.tagName.toLowerCase() === "body") {
             // in firefox body.scrollTop doesn't scroll the page
             // thus if we are trying to scrollTop on a body tag
             // we need to scroll on the documentElement
             document.documentElement.scrollTop = top;
-            document.documentElement.scrollLeft = left;
+            // document.documentElement.scrollLeft = left;
         }
     }
 
